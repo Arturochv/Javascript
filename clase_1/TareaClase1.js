@@ -11,7 +11,7 @@ luego la exprese en días, horas, minutos y segundos.
 /**
 ejercicio 1 */
 var soles = 50
-var dolares = 50/3.25
+var dolares = soles / 3.25
 
 console.log('50 soles en dolares son:' + ' ' + dolares )
 
@@ -79,7 +79,7 @@ case 'a': case 'b': case 'c': phonenumber+="2";break;
 case 'd': case 'e': case 'f': phonenumber+="3";break;
 case 'g': case 'h': case 'i': phonenumber+="4";break;
 case 'j': case 'k': case 'l': phonenumber+="5";break;
-case 'm': case 'n': case 'o': phonenumber+="6";break;
+case 'm': case 'n': case 'o': phonenumber+="6";break;''
 case 'p': case 'q': case 'r': case 's': phonenumber+="7";break;
 case 't': case 'u': case 'v': phonenumber+="8";break;
 case 'w': case 'x': case 'y': case 'z': phonenumber+="9";break;
