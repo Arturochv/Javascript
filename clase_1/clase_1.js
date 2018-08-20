@@ -24,7 +24,7 @@ console.log('isAdult ' + isAdult)
 var lastName = null // null es un valor, está inicializa la variable y vale null
 console.log('lastName', lastName)
 
-// age  > 18 es una expresion booleana. Devuelve true o false
+// age  > 18 es una  expresion booleana. Devuelve true o false
 console.log('Soy mayor de edad', age > 18)
 
 var soyJoven = age < 40 // creo la variable y le asigno un valor.
@@ -182,4 +182,3 @@ console.log(listaDeNombres[1].name)
 
 delete listaDeNombres[1] // borra el elemento pero mantiene la posición del array. El largo es el mismo que antes de que se borre el elemento
 console.log('listaDeNombres', listaDeNombres)
-
