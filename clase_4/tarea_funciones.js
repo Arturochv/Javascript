@@ -144,4 +144,32 @@
       var textos = ['Hola','Chau']
       mostrarArrayPorParametro(textos)
     }
-    mostrarTexto()
+    //mostrarTexto()
+
+    //Mostrar si todos los numeros dentro de un array son pares
+    function mostrarArray(){
+      var numeros = [4,5,7,10,45,40,34,42,2,5,24,22,40,9,5]
+      var pares = 0
+      var impares = 0
+      for (var i = 0; i < numeros.length; i++){
+        if (i % 2 === 0)
+        pares = pares + 1
+        else {
+          impares = impares + 1
+        }
+      }
+      console.log('hay:',pares,' numeros pares')
+      console.log('hay:',impares,'numeros impares')
+    }
+    //mostrarArray()
+
+    //Crear un objeto que contenga la posición del array como clave
+    // y el valor de la posición como valor del objeto.
+    //[100,200,300] = {0: 100, 1: 200,3:300}
+
+    var nombres = new Array();
+    nombres [0] = 'Arturo';
+    nombres [1] = 'Lucia';
+    nombres [2] = 'Carmen';
+
+    console.log(nombres);
