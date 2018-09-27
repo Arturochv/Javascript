@@ -116,7 +116,7 @@ var persona = {
   }
 }
 persona.name = 'Arthuro' // Lo sobreescribí
-persona.ciudad = 'Arequipa'
+persona.ciudad = 'Arequipa' 
 
 console.log('persona', persona)
 console.log('Nombre', persona.name) // Accedo a la propiedad name dentro de persona
@@ -126,7 +126,9 @@ console.log('Dirección', persona.address.street + ' ' + persona.address.streetN
 console.log('Nombre []', persona['name']) // Acceso dinámico
 var propiedad = 'age'
 console.log('Propiedad []', persona[propiedad]) // Acceso dinámico
-
+persona[propiedad] = 'Lima'
+persona.propiedad = 'Lima'
+console.log(persona)
 /**
  * Arrays (son elementos de cualquier tipo)
  * Listas

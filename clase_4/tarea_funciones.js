@@ -152,24 +152,43 @@
       var pares = 0
       var impares = 0
       for (var i = 0; i < numeros.length; i++){
-        if (i % 2 === 0)
-        pares = pares + 1
+        if (i % 2 === 0){
+          pares++
+        }
         else {
-          impares = impares + 1
+          impares++
         }
       }
       console.log('hay:',pares,' numeros pares')
       console.log('hay:',impares,'numeros impares')
     }
-    //mostrarArray()
+    mostrarArray()
 
     //Crear un objeto que contenga la posición del array como clave
     // y el valor de la posición como valor del objeto.
     //[100,200,300] = {0: 100, 1: 200,3:300}
 
-    var nombres = new Array();
-    nombres [0] = 'Arturo';
-    nombres [1] = 'Lucia';
-    nombres [2] = 'Carmen';
+    var numeros = [100,200,300]
+    var obj = {} // i = posicion del array/clave objeto
+    for (var i = 0; i < numeros.length; i++){
+      var clave = i
+      obj[clave] = numeros[i]
 
-    console.log(nombres);
+    }
+    console.log(obj)
+
+    //En base a una palabra, crear un objeto que cuente la cantidad de cada letra
+    //Ejemplo: Ingreso  hola => {h:1, o:1, l:1, a:1}
+
+    var palabra = 'pepe'
+    var obj = {}
+    for (var i = 0; i < palabra.length; i++){
+      var letra = palabra[i]
+      if (obj[letra]){
+        obj[letra]++
+      }else {
+        obj[letra] = 1
+      }
+      console.log(letra)
+    }
+    console.log(obj)
